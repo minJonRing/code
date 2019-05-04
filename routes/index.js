@@ -17,5 +17,14 @@ router.get('/click', async (ctx, next) => {
     title: 'Hello Koa 2!'
   })
 })
-
+router.get('/home', async (ctx, next) => {
+  await ctx.render('home', {
+    title: 'Hello Koa 2!'
+  })
+})
+router.get('/history', async (ctx, next) => {
+  await ctx.render('history', {
+    title: 'Hello Koa 2!'
+  })
+})
 module.exports = router
